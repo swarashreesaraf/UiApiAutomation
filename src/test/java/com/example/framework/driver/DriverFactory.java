@@ -21,7 +21,7 @@ public final class DriverFactory {
         if (!browser.equals("chrome")) {
             throw new IllegalArgumentException("Unsupported browser: " + browser);
         }
-        // Local browser setup:
+        // Local browser setup: Test
        //  WebDriverManager.chromedriver().setup();
         ChromeOptions options = new ChromeOptions();
         if (Config.getBoolean("headless")) {
